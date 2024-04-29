@@ -33,11 +33,11 @@ enum Colour {
   AMARILLO,
   ROJO,
   VERDE,
-  CELESTE;
+  CELESTE
 }
 
 enum Material {
   ALGODON,
   LANA,
-  TELA;
+  TELA
 }
