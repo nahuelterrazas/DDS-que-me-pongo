@@ -1,27 +1,28 @@
-package ar.edu.utn.frba.dds;
+package ar.edu.utn.frba.dds.prenda.propiedades;
 
 public class TipoPrenda {
-  enum Calzados {
+  public enum Calzado {
     SANDALIAS,
     ZAPATILLAS,
     ZAPATOS,
-    BOTAS;
+    BOTAS
   }
 
-  enum Superior {
+  public enum Superior {
     REMERA,
     CAMISA,
     BUZO,
-    CAMPERA;
+    CAMPERA,
+    CHOMBA
   }
 
-  enum inferior {
+  public enum Inferior {
     PANTALON,
-    SHORT;
+    SHORT
   }
 
-  enum Accesorios {
+  public enum Accesorios {
     LENTES,
-    COLLAR;
+    COLLAR
   }
 }

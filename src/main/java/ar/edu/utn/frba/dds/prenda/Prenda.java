@@ -1,43 +1,35 @@
-package ar.edu.utn.frba.dds;
+package ar.edu.utn.frba.dds.prenda;
+
+import ar.edu.utn.frba.dds.prenda.propiedades.Color;
+import ar.edu.utn.frba.dds.prenda.propiedades.Material;
+import ar.edu.utn.frba.dds.prenda.propiedades.Trama;
 
 public class Prenda {
   Enum tipoPrenda;
   Material material;
-  Colour colorPrincipal;
-  Colour colorSecundario;
+  Color colorPpal; //  Color colorSec;
+  Trama trama;
 
-  public Prenda(Enum tipoPrenda, Material material, Colour colorPrincipal){
-    if (tipoPrenda == null || material == null || colorPrincipal == null) {
-      throw new RuntimeException("No se pudo registrar la prenda por falta de datos");
-    }
-    this.tipoPrenda = tipoPrenda;
-    this.material = material;
-    this.colorPrincipal = colorPrincipal;
+  public Material getMaterial() {
+    return material;
   }
 
-  public Prenda(Enum tipoPrenda, Material material, Colour colorPrincipal, Colour colorSecundario){
-    if (tipoPrenda == null || material == null || colorPrincipal == null) {
-      throw new RuntimeException("No se pudo registrar la prenda por falta de datos");
-    }
-    this.tipoPrenda = tipoPrenda;
-    this.material = material;
-    this.colorPrincipal = colorPrincipal;
-    this.colorSecundario = colorSecundario;
+  public Color getColorPpal() {
+    return colorPpal;
   }
 
-}
+  public Trama getTrama() {
+    return trama;
+  }
 
-enum Colour {
-  AZUL,
-  BLANCO,
-  AMARILLO,
-  ROJO,
-  VERDE,
-  CELESTE
-}
+  public Enum getTipoPrenda() {
+    return tipoPrenda;
+  }
 
-enum Material {
-  ALGODON,
-  LANA,
-  TELA
+  public Prenda(Enum tipoPrenda, Material material, Color colorPpal, Trama trama) {
+    this.tipoPrenda = tipoPrenda;
+    this.material = material;
+    this.colorPpal = colorPpal;
+    this.trama = trama;
+  }
 }
